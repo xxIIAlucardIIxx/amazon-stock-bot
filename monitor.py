@@ -47,6 +47,9 @@ def check_product(product):
         soup = BeautifulSoup(response.text, "html.parser")
         text = soup.get_text(" ", strip=True).lower()
 
+        title = soup.title.string.strip() if soup.title and soup.title.string else "sin título"
+        print(f"   [debug] HTTP {response.status_code} | {len(response.text)} caracteres | título: {title}")
+
         if product["store"] == "Amazon":
             unavailable = [
                 "actualmente no disponible",
