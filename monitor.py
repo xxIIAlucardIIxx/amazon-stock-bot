@@ -15,7 +15,7 @@ PRODUCTS = [
         "name": "Producto Amazon 2",
         "url": "https://www.amazon.com.mx/dp/B0HKDZ4LBX",
     },
-  
+  {
         "store": "Amazon",
         "name": "Producto Amazon 3",
         "url": "https://www.amazon.com.mx/dp/B0HLQZS8DJ",
